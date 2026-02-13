@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Event Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>🎯 Smart Event Dashboard</header>
+
+<div class="main">
+
+    <!-- Add Event Section -->
+    <div id="container" class="event-box">
+        <h2>Add New Event</h2>
+
+        <form id="eventForm">
+
+            <label>Event Title:</label>
+            <input type="text" id="title" required>
+
+            <label>Event Date:</label>
+            <input type="date" id="date" required>
+
+            <label>Category:</label>
+            <select id="category">
+                <option>Conference</option>
+                <option>Webinar</option>
+                <option>Social</option>
+                <option>Workshop</option>
+                <option>Meetup</option>
+            </select>
+
+            <label>Description:</label>
+            <textarea id="description"></textarea>
+
+            <button id="addBtn" type="submit">Add Event</button>
+
+        </form>
+    </div>
+
+    <!-- Event List Section -->
+    <div id="schedule-container" class="event-box">
+        <h2>My Events</h2>
+
+        <div id="btns-container">
+            <button id="clearBtn">Clear All Events</button>
+            <button id="sampleBtn">Add Sample Events</button>
+        </div>
+
+        <div id="event-list">
+            No events yet. Add your first event!
+        </div>
+    </div>
+
+</div>
+
+<!-- DOM Demo -->
+<div class="dom-demo">
+    <h2>DOM Manipulation Demo</h2>
+    <div class="dom-box" id="keyBox">You Pressed: —</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
